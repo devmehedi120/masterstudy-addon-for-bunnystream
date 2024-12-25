@@ -1,0 +1,236 @@
+.bunnystream-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.playlist-creation {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.playlist-form {
+    display: flex;
+    gap: 10px;
+}
+
+.playlist-form input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.playlist-form input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+.playlists-section {
+    margin-top: 30px;
+}
+
+.playlists-section h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.playlist-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.playlist-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.playlist-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.playlist-actions button {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.delete-playlist {
+    background: #dc3545;
+}
+
+.delete-playlist:hover {
+    background: #c82333;
+}
+
+.video-upload {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video-upload h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+#video-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#video-upload-form input[type="file"] {
+    padding: 10px;
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+#video-upload-form input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.video-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.video-item h5 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.video-item small {
+    color: #666;
+    font-size: 12px;
+}
+
+.video-player {
+    margin-top: 15px;
+}
+
+.video-player video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Error states */
+.error-message {
+    color: #dc3545;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    margin: 10px 0;
+    background: #fde8e8;
+}
+
+/* Success message */
+.success-message {
+    color: #28a745;
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    margin: 10px 0;
+    background: #e8f5e9;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 16px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .playlist-form {
+        flex-direction: column;
+    }
+    
+    .playlist-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .playlist-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .video-upload {
+        margin-top: 15px;
+    }
+}
